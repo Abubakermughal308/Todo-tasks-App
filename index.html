@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body onload="Addall()">
+    <div class="container">
+        <div class="form_container">
+            <h1>Todo App</h1>
+            <form class="Create_form" >
+
+              <input type="text" placeholder="Enter your task..."  class="tasks">
+                <button type="button" onclick="add()"  class="button">Create</button>
+
+            </form>
+            <form  class="update_form">
+                <input  type="text" hidden  class="id">
+                <input type="text" placeholder="Update your task..." class="Utasks">
+                <button type="button" onclick="update()" class="button">Update</button>
+            </form>
+            <div   class="add_div">
+            <button onclick="create()" class="button">add +</button>
+             </div>
+            <table>
+                <thead>
+                    <th>Tasks</th>
+                    <th>Action</th>
+                </thead>
+                <tbody class="table_data">
+                   
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
